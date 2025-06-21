@@ -20,7 +20,7 @@ class ApiController extends ResourceController
     function __construct()
     {
 
-        $this->apiKey = env('COST_KEY');
+        $this->apiKey = env('API_KEY');
         $this->user = new UserModel();
         $this->transaction = new TransactionModel();
         $this->transaction_detail = new TransactionDetailModel();
